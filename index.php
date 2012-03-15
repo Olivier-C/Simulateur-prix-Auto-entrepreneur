@@ -25,7 +25,7 @@ if($_POST['prix'] && $_POST['taxe'])
 $prix = $_POST['prix'];
 $taxe = $_POST['taxe'];
 $prixTTC = (($prix * 20.3) / 100) + $prix; // début du calcul
-echo 'Prix total ttc = '. number_format($prixTTC, 2, ',', ' ').' €' .'<br>Prix arrondis = '; // résultat
+echo 'Prix total ttc = '. number_format($prixTTC, 2, ',', ' ').' €'.'<br>Prix arrondis = '; // résultat
 echo number_format(ceil($prixTTC), 2, ',', ' ').' €';
 }
 
